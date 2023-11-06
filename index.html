@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Apartamento</title>
+</head>
+<body>
+    <header><h3>Minha Casa</h3></header>
+    <div class="casa">
+        <div class="comodo" id="sala">Sala de Estar</div>
+        <div class="comodo" id="quarto">Quarto</div>
+        <div class="comodo" id="banheiro">Banheiro</div>
+        <div class="comodo" id="quarto2">Quarto</div>
+        <div class="comodo" id="cozinha">Cozinha</div>
+    </div>
+
+    <header><h3>Central de Energia:</h3>
+        <button onclick="ligaEnergia()">Geral-on</button>
+        <button onclick="desligaEnergia()">Geral-off</button>
+
+        <button id="liga-sala" onclick="ligaEnergia1('sala')">Ligar energia da Sala</button>
+        <button id="desliga-sala" onclick="desligaEnergia1('sala')">Desligar energia da Sala</button>
+
+        <button id="liga-cozinha" onclick="ligaEnergia1('cozinha')">Ligar energia da Cozinha</button>
+        <button id="desliga-cozinha" onclick="desligaEnergia1('cozinha')">Desligar energia da Cozinha</button>
+
+        <button id="liga-quarto2" onclick="ligaEnergia1('quarto2')">Ligar energia do Quarto2</button>
+        <button id="desliga-quarto2" onclick="desligaEnergia1('quarto2')">Desligar energia do Quarto2</button>
+
+        <button id="liga-quarto" onclick="ligaEnergia1('quarto')">Ligar energia do Quarto</button>
+        <button id="desliga-quarrto" onclick="desligaEnergia1('quarto')">Desligar energia do Quarto</button>
+
+        <button id="liga-banheiro" onclick="ligaEnergia1('banheiro')">Ligar energia do Banheiro</button>
+        <button id="desliga-banheiro" onclick="desligaEnergia1('banheiro')">Desligar energia do Banheiro</button>
+    </header>
+</body>
+</html>
